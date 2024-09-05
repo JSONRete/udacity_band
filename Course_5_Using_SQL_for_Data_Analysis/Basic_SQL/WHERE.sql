@@ -12,5 +12,5 @@ LIMIT 5;
 
 SELECT *
 FROM orders
-WHERE gloss_amt_usd <=
-LIMIT 1000;
+WHERE gloss_amt_usd <= 500
+LIMIT 10;
