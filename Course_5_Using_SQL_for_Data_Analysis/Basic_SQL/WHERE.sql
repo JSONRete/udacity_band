@@ -9,3 +9,8 @@ SELECT *
 FROM orders
 WHERE gloss_amt_usd >= 1000
 LIMIT 5;
+
+SELECT *
+FROM orders
+WHERE gloss_amt_usd <=
+LIMIT 1000;
