@@ -6,3 +6,14 @@
 SELECT name, website, primary_poc
 FROM accounts
 WHERE name = 'Exxon Mobil';
+
+-- given answer:
+
+-- Solutions: WHERE with Non-Numeric
+-- Lesson
+
+-- Downloads
+
+SELECT name, website, primary_poc
+FROM accounts
+WHERE name = 'Exxon Mobil';
