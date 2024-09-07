@@ -14,8 +14,11 @@ SELECT *
 FROM accounts
 WHERE name LIKE 'C%';
 
+SELECT name
+FROM accounts
+WHERE name LIKE 'C%';
+
 -- All companies whose names contain the string 'one' somewhere in the name.
 
--- All companies whose names end with 's'.
 
--- You can try executing these queries in the workspace given below.
+-- All companies whose names end with 's'.
