@@ -34,6 +34,14 @@ SELECT occurred_at
 FROM orders
 WHERE gloss_qty BETWEEN 24 AND 29
 
+-- another solution:
+
+SELECT occurred_at
+FROM orders
+WHERE gloss_qty >= 24 AND gloss_qty <= 29
+
+
+
 -- Use the web_events table to find all information regarding individuals who were contacted via the organic or adwords channels, and started their account at any point in 2016, sorted from newest to oldest.
 SELECT *
 FROM web_events
