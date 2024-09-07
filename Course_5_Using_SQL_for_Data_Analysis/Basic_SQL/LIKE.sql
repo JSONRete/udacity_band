@@ -30,3 +30,11 @@ WHERE name LIKE '%one%';
 
 
 -- All companies whose names end with 's'.
+
+SELECT *
+FROM accounts
+WHERE name LIKE '%s';
+
+SELECT name
+FROM accounts
+WHERE name LIKE '%s';
