@@ -1,9 +1,10 @@
 -- Code from the Video
-Query1
+
+-- Query1
 SELECT orders.*
 FROM orders
-Query2
 
+-- Query2
 SELECT orders.*,
     accounts.*
 FROM orders 
