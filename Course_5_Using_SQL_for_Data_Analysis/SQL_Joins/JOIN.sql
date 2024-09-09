@@ -10,3 +10,26 @@ SELECT orders.*,
 FROM orders 
 JOIN accounts
 ON orders.account_id = accounts.id;
+
+-- my first join given example:
+SELECT orders.*
+FROM orders
+JOIN accounts
+ON orders.account_id = accounts.id;
+
+-- additional examples:
+SELECT accounts.name, orders.occurred_at
+FROM orders
+JOIN accounts
+ON orders.account_id = accounts.id;
+
+SELECT *
+FROM orders
+JOIN accounts
+ON orders.account_id = accounts.id;
+And the first query you ran pull all the information from only the orders table:
+
+SELECT orders.*
+FROM orders
+JOIN accounts
+ON orders.account_id = accounts.id;
