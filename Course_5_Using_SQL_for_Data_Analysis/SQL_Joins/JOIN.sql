@@ -27,7 +27,6 @@ SELECT *
 FROM orders
 JOIN accounts
 ON orders.account_id = accounts.id;
-And the first query you ran pull all the information from only the orders table:
 
 SELECT orders.*
 FROM orders
