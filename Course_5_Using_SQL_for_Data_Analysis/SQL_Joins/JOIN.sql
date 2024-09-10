@@ -45,4 +45,13 @@ FROM accounts
 JOIN orders
 ON orders.account_id = accounts.id
 
--- im gonna try both this slightly flipped
+-- im gonna try both this slightly flip the 1st one I tried
+SELECT *
+FROM orders
+JOIN accounts
+ON orders.account_id = accounts.id
+
+SELECT *
+FROM orders
+JOIN accounts
+ON accounts.id = orders.account_id
