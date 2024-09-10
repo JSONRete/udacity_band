@@ -61,3 +61,15 @@ SELECT *
 FROM orders
 JOIN accounts
 ON accounts.id = orders.account_id
+
+-- given answers:
+SELECT orders.*, accounts.*
+FROM accounts
+JOIN orders
+ON accounts.id = orders.account_id;
+-- Notice this result is the same as if you switched the tables in the FROM and JOIN. 
+-- Additionally, which side of the = a column is listed doesn't matter. 1. 
+SELECT orders.standard_qty, orders.gloss_qty, orders.poster_qty, accounts.website, accounts.primary_poc 
+FROM orders 
+JOIN accounts 
+ON orders.account_id = accounts.id
