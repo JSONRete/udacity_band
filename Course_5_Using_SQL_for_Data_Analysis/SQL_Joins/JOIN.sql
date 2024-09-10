@@ -34,17 +34,23 @@ JOIN accounts
 ON orders.account_id = accounts.id;
 
 -- my entered tries at JOIN's
-
+-- 1st
 SELECT *
 FROM accounts
 JOIN orders
 ON orders.account_id = accounts.id
-
-SELECT orders.standard_qty, orders.gloss_gty, orders.poster_qty, accounts.primary_poc
+-- slightly different ver from the one above:
+SELECT orders.*, accounts.*
+FROM accounts
+JOIN orders
+ON orders.account_id = accounts.id
+-- 2nd
+SELECT orders.standard_qty, orders.gloss_gty, orders.poster_qty, accounts.website, accounts.primary_poc
 FROM accounts
 JOIN orders
 ON orders.account_id = accounts.id
 
+-- 1st retries
 -- im gonna try both this slightly flip the 1st one I tried
 SELECT *
 FROM orders
