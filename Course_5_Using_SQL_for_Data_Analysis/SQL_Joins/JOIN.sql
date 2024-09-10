@@ -39,3 +39,10 @@ SELECT *
 FROM accounts
 JOIN orders
 ON orders.account_id = accounts.id
+
+SELECT orders.standard_qty, orders.gloss_gty, orders.poster_qty, accounts.primary_poc
+FROM accounts
+JOIN orders
+ON orders.account_id = accounts.id
+
+-- im gonna try both this slightly flipped
