@@ -32,3 +32,10 @@ SELECT orders.*
 FROM orders
 JOIN accounts
 ON orders.account_id = accounts.id;
+
+-- my entered tries at JOIN's
+
+SELECT *
+FROM accounts
+JOIN orders
+ON orders.account_id = accounts.id
