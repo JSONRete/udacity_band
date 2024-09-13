@@ -16,3 +16,11 @@ WHERE a.name = 'Walmart';
 Provide a table that provides the region for each sales_rep along with their associated 
 accounts. Your final table should include three columns: the region name, the sales rep 
 name, and the account name. Sort the accounts alphabetically (A-Z) according to the account name.*/
+
+SELECT r.name Region, s.name Rep, a.name Account
+FROM accounts a
+JOIN sales_reps s
+ON s.id = a.sales_rep_id
+JOIN region r
+ON r.id = s.region_id
+ORDER BY  a.name
