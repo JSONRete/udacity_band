@@ -1,3 +1,10 @@
+
+-- Let's look back at the first JOIN you wrote.
+SELECT orders.*
+FROM orders
+JOIN accounts
+ON orders.account_id = accounts.id;
+
 -- given test code:
 SELECT *
 FROM web_events
