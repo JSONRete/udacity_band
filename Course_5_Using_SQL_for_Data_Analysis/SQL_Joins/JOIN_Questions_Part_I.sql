@@ -31,7 +31,7 @@ unit price they paid (total_amt_usd/total) for the order. Your final table shoul
 3 columns: region name, account name, and unit price. A few accounts have 0 for total, 
 so I divided by (total + 0.01) to assure not dividing by zero.*/
 
-SELECT r.name region_name, a.name account_name, o.total_amt_usd/total + 0.01 unit_price
+SELECT r.name region_name, a.name account_name, o.total_amt_usd/(o.total + 0.01) unit_price
 FROM accounts a
 JOIN orders o
 ON o.account_id = a.id
