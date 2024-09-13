@@ -1,5 +1,4 @@
-/*
-Question 01
+/*Question 01
 Provide a table for all web_events associated with the account name of Walmart. 
 There should be three columns. Be sure to include the primary_poc, time of the event
 and the channel for each event. Additionally, you might choose to add a fourth column
@@ -11,3 +10,9 @@ FROM WEB_EVENTS w
 JOIN accounts a
 ON a.id = w.account_id
 WHERE a.name = 'Walmart';
+
+
+/*Question 02
+Provide a table that provides the region for each sales_rep along with their associated 
+accounts. Your final table should include three columns: the region name, the sales rep 
+name, and the account name. Sort the accounts alphabetically (A-Z) according to the account name.*/
