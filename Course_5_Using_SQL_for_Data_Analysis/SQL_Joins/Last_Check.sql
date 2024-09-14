@@ -89,5 +89,11 @@ ORDER BY unit_price DESC
 
 -- 07 What are the different channels used by account id 1001? Your final table should have only 2 columns: account name and the different channels. You can try SELECT DISTINCT to narrow down the results to only the unique values.
 
+-- my answer:
+SELECT DISTINCT a.name, w.channel
+FROM accounts a
+JOIN web_events w
+ON w.account_id = a.id
+WHERE a.id = 1001
 
 -- 08 Find all the orders that occurred in 2015. Your final table should have 4 columns: occurred_at, account name, order total, and order total_amt_usd.
