@@ -97,3 +97,12 @@ ON w.account_id = a.id
 WHERE a.id = 1001
 
 -- 08 Find all the orders that occurred in 2015. Your final table should have 4 columns: occurred_at, account name, order total, and order total_amt_usd.
+
+-- my answer:
+SELECT w.occurred_at date, a.name acct, o.total, o.total_amt_usd
+FROM accountS a
+JOIN orders o
+ON o.account_id = a.id
+JOIN web_events w
+ON w.account_id = a.id
+WHERE w.occurred_at BETWEEN '01-01-2015' AND '01-01-2016'
