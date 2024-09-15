@@ -1,5 +1,5 @@
-Code from the Video
-Query 1
+-- Code from the Video
+-- Query 1
 SELECT  MIN(standard_qty) AS standard_min,
         MIN(gloss_qty) AS gloss_min,
         MIN(poster_qty) AS poster_min,
